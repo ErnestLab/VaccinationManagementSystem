@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAL.Entities
 {
@@ -12,5 +13,7 @@ namespace DAL.Entities
 
         public int HospitalId { get; set; }
         public virtual Hospital Hospital { get; set; }
+
+        public virtual List<Journal> Journals { get; set; }
     }
 }
